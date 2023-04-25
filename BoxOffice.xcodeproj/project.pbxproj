@@ -14,7 +14,7 @@
 		63DF20F82970E1A1005DF7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DF20F72970E1A1005DF7D1 /* Assets.xcassets */; };
 		63DF20FB2970E1A1005DF7D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DF20F92970E1A1005DF7D1 /* LaunchScreen.storyboard */; };
 		E715374529F7AD8000112BE6 /* MyProperty.plist in Resources */ = {isa = PBXBuildFile; fileRef = E715374429F7AD8000112BE6 /* MyProperty.plist */; };
-		E715374729F7AE1200112BE6 /* TestProperty.plist in Resources */ = {isa = PBXBuildFile; fileRef = E715374629F7AE1200112BE6 /* TestProperty.plist */; };
+		E715374929F7AF1200112BE6 /* TestP.plist in Resources */ = {isa = PBXBuildFile; fileRef = E715374829F7AF1200112BE6 /* TestP.plist */; };
 		E7C1159929F61B5900497283 /* DailyBoxOffice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C1159829F61B5900497283 /* DailyBoxOffice.swift */; };
 		E7C115C129F7606F00497283 /* BoxOfficeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C115C029F7606F00497283 /* BoxOfficeTests.swift */; };
 		E7C115C829F7667100497283 /* DailyBoxOffice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C1159829F61B5900497283 /* DailyBoxOffice.swift */; };
@@ -41,7 +41,7 @@
 		63DF20FA2970E1A1005DF7D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63DF20FC2970E1A1005DF7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E715374429F7AD8000112BE6 /* MyProperty.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MyProperty.plist; sourceTree = "<group>"; };
-		E715374629F7AE1200112BE6 /* TestProperty.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TestProperty.plist; sourceTree = "<group>"; };
+		E715374829F7AF1200112BE6 /* TestP.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TestP.plist; sourceTree = "<group>"; };
 		E7C1159829F61B5900497283 /* DailyBoxOffice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBoxOffice.swift; sourceTree = "<group>"; };
 		E7C115BE29F7606F00497283 /* BoxOfficeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxOfficeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C115C029F7606F00497283 /* BoxOfficeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeTests.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 				63DF20F72970E1A1005DF7D1 /* Assets.xcassets */,
 				63DF20FC2970E1A1005DF7D1 /* Info.plist */,
 				E715374429F7AD8000112BE6 /* MyProperty.plist */,
-				E715374629F7AE1200112BE6 /* TestProperty.plist */,
+				E715374829F7AF1200112BE6 /* TestP.plist */,
 			);
 			path = BoxOffice;
 			sourceTree = "<group>";
@@ -233,9 +233,9 @@
 			files = (
 				63DF20FB2970E1A1005DF7D1 /* LaunchScreen.storyboard in Resources */,
 				E715374529F7AD8000112BE6 /* MyProperty.plist in Resources */,
+				E715374929F7AF1200112BE6 /* TestP.plist in Resources */,
 				63DF20F82970E1A1005DF7D1 /* Assets.xcassets in Resources */,
 				63DF20F62970E1A0005DF7D1 /* Main.storyboard in Resources */,
-				E715374729F7AE1200112BE6 /* TestProperty.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

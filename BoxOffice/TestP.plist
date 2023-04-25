@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   TestP.plist
+   BoxOffice
+
+   Created by 신동오 on 2023/04/25.
+   Copyright (c) 2023 ___ORGANIZATIONNAME___. All rights reserved.
+-->
 <plist version="1.0">
-<dict>
-	<key>Movie_API_Key</key>
-	<string>KEY_VALUE</string>
-</dict>
+<dict/>
 </plist>
