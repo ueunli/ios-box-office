@@ -7,14 +7,14 @@
 
 struct DailyBoxOffice: Decodable {
     
-    let type, showRange: String
+    let type, range: String
     let movies: [Movie]
     
     init(from decoder: Decoder) throws {
         let keys = try decoder.container(keyedBy: ResultKeys.self)
-        let nestedKeys = try keys.nestedContainer(keyedBy: CodingKeys.self, forKey: .boxOfficeResult)
+        let nestedKeys = try keys.nestedContainer(keyedBy: BoxOfficeKeys.self, forKey: .boxOfficeResult)
         self.type = try nestedKeys.decode(String.self, forKey: .type)
-        self.showRange = try nestedKeys.decode(String.self, forKey: .showRange)
+        self.range = try nestedKeys.decode(String.self, forKey: .range)
         self.movies = try nestedKeys.decode([Movie].self, forKey: .movies)
     }
     
@@ -22,8 +22,8 @@ struct DailyBoxOffice: Decodable {
         case boxOfficeResult
     }
     
-    enum CodingKeys: String, CodingKey {
-        case showRange
+    enum BoxOfficeKeys: String, CodingKey {
+        case range = "showRange"
         case type = "boxofficeType"
         case movies = "dailyBoxOfficeList"
     }
