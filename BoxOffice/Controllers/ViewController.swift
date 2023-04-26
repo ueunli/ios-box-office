@@ -19,10 +19,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         do {
-            let parsedData = try JSONDecoder().decode(BoxOfficeResult.self, from: dummy)
+            let parsedData = try JSONDecoder().decode(DailyBoxOffice.self, from: dummy)
             print(parsedData.movies[0])
         } catch {
-            print("ss")
+            print("failed")
         }
     }
 
