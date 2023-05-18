@@ -79,7 +79,9 @@ final class BoxOfficeViewController: UIViewController {
     
     private func configureMovieDataSource() {
         let cellRegistration = UICollectionView.CellRegistration<MovieCollectionViewListCell, MovieDTO> { cell, indexPath, itemIdentifier in
-            cell.delegate = self
+            cell.accessories.append(.outlineDisclosure(options: .init(tintColor: .systemGray3)) {
+                print(itemIdentifier.name, itemIdentifier.code)
+            })
         }
         
         movieDataSource = UICollectionViewDiffableDataSource<Section, MovieDTO>(collectionView: movieCollectionView) { collectionView, indexPath, itemIdentifier in
@@ -160,14 +162,6 @@ final class BoxOfficeViewController: UIViewController {
         opacityKeyframe.duration = 0.8
         opacityKeyframe.repeatCount = .infinity
         loadLabel.layer.add(opacityKeyframe, forKey: "loading")
-    }
-    
-}
-
-extension BoxOfficeViewController: MovieCollectionViewListCellDelegate {
-    
-    func moveToDetailView(movieName: String, movieCode: String) {
-        present(BoxOfficeViewController(), animated: true)
     }
     
 }

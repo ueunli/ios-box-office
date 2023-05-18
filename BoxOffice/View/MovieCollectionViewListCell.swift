@@ -7,15 +7,7 @@
 
 import UIKit
 
-protocol MovieCollectionViewListCellDelegate {
-    
-    func moveToDetailView(movieName: String, movieCode: String)
-    
-}
-
 final class MovieCollectionViewListCell: UICollectionViewListCell {
-    
-    var delegate: MovieCollectionViewListCellDelegate?
     
     private let rankLabel: UILabel = {
         let label = UILabel()
@@ -64,10 +56,15 @@ final class MovieCollectionViewListCell: UICollectionViewListCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        
         rankLabel.text = nil
         rankStatusLabel.text = nil
         rankStatusImage.image = nil
         rankStatusImage.isHidden = false
+        
+        accessories.removeAll {
+            $0.accessoryType == UICellAccessory.AccessoryType.outlineDisclosure
+        }
     }
     
     private func configureLayout() {
