@@ -7,7 +7,15 @@
 
 import UIKit
 
+protocol MovieCollectionViewListCellDelegate {
+    
+    func moveToDetailView(movieName: String, movieCode: String)
+    
+}
+
 final class MovieCollectionViewListCell: UICollectionViewListCell {
+    
+    var delegate: MovieCollectionViewListCellDelegate?
     
     private let rankLabel: UILabel = {
         let label = UILabel()
@@ -63,7 +71,6 @@ final class MovieCollectionViewListCell: UICollectionViewListCell {
     }
     
     private func configureLayout() {
-        accessories = [.disclosureIndicator()]
         accessories.append(.customView(configuration: .init(customView: leftStackView, placement: .leading())))
     }
     
